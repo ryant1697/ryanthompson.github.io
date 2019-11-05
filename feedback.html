@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            PokéMonsters :: Feedback
+        </title>
+        
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "pokemonsters.css">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name = "vote" content = "Make our website better by providing us with your feedback.">
+    </head>
+
+    <body>
+            <div id = "wrapper">
+            <header> <h1> <a href = "index.html"> PokéMonsters </a> </h1> </header>
+        
+            <nav>
+                <ul>
+                    <li><a href = "generations.html">Generations</a></li>
+                    <li><a href = "regions.html">Regions</a></li>
+                    <li><a href = "protagonists.html">Protagonists</a></li>
+                    <li><a href = "trainers.html">Trainers</a></li>
+                    <li><a href = "antagonists.html">Antagonists</a></li>
+                    <li><a href = "pokedex.html">Pokédex</a></li>
+                    <li><a href = "feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div id = "feedback">
+            
+            </div>
+
+            <main style = "padding: 0px 20px 20px 20px;">
+                <h2> Send us your feedback! </h2>
+                <p> Required fields are marked with an asterisk * </p>
+                
+                <form method = "post" action = "https://webdevbasics.net/scripts/demo.php">
+                
+                    <label for = "FirstName" > First Name: </label>
+                    <input name = "FirstName" id = "FirstName">
+
+                    <label> *Gender: </label>
+                        <select name = "Gender" id = "Gender" required>
+                            <!-- style = "display: none" -->
+                            <option disabled selected value> -- select one -- </option>
+                            <option> Male </option>
+                            <option> Female </option>
+                        </select>
+
+                    <label> *Game Generation(s): </label>
+                        <select name = "FavoriteGeneration" id = "FavoriteGeneration" required>
+                            <option disabled selected value> -- select your favorite generation -- </option>
+                            <option> Generation 1 - Pokémon (Red, Green, Blue, Yellow) </option>
+                            <option> Generation 2 - Pokémon (Gold, Silver, Crystal) </option>
+                            <option> Generation 3 - Pokémon (Ruby, Sapphire, FireRed, LeafGreen, Emerald) </option>
+                            <option> Generation 4 - Pokémon (Diamond, Pearl, Platinum, HeartGold, SoulSilver) </option>
+                            <option> Generation 5 - Pokémon (Black, White, Black 2, White 2) </option>
+                            <option> Generation 6 - Pokémon (X, Y, Omega Ruby, Alpha Sapphire) </option>
+                            <option> Generation 7 - Pokémon (Sun, Moon, Ultra Sun, Ultra Moon, Let’s Go Pikachu, Let’s Go Eevee)</option>
+                            <option> Generation 8 - Pokémon (Sword, Shield) </option>
+                        </select>
+              
+                    <label> *Starter Pokémon: </label>
+                        <select name = "FavoriteStarter" id = "FavoriteStarter" required>
+                            <option disabled selected value> -- select your favorite starter -- </option>
+                            <optgroup label = "Kanto">
+                               <option> Bulbasaur </option>
+                               <option> Charmander </option>
+                               <option> Squirtle </option>
+                            </optgroup>
+
+                            <optgroup label = "Johto">
+                               <option> Chikorita </option>
+                               <option> Cyndaquil </option>
+                               <option> Totodile </option>
+                            </optgroup>
+
+                            <optgroup label = "Hoenn">
+                                <option> Treecko </option>
+                                <option> Torchic </option>
+                                <option> Mudkip </option>
+                            </optgroup>
+
+                            <optgroup label = "Sinnoh">
+                               <option> Turtwig </option>
+                               <option> Chimchar </option>
+                               <option> Piplup </option>
+                            </optgroup>
+
+                            <optgroup label = "Unova">
+                                <option> Snivy </option>
+                                <option> Tepig </option>
+                                <option> Oshawott </option>
+                            </optgroup>
+
+                            <optgroup label = "Kalos">
+                                <option> Chespin </option>
+                                <option> Fennekin </option>
+                                <option> Froakie </option>
+                            </optgroup>
+
+                            <optgroup label = "Alola">
+                                <option> Rowlet </option>
+                                <option> Litten </option>
+                                <option> Popplio </option>
+                            </optgroup>
+
+                            <optgroup label = "Galar">
+                                <option> Grookey </option>
+                                <option> Scorbunny </option>
+                                <option> Sobble </option>
+                            </optgroup>
+                          </select>
+
+                    <label> *Strongest Pokémon(s): </label>
+                        <select name = "Strongest" id = "Strongest" required>
+                            <option disabled selected value> -- strongest in your opinion -- </option>
+                            <option value = "Mega Mewtwo X/Y"> a: Mega Mewtwo X/Y (Strongest Man-created Pokémon) </option>
+                            <option value = "Lugia & Ho-Oh"> b: Lugia & Ho-Oh (Trio Masters of the Legendary Birds and the Legendary Beasts) </option>
+                            <option value = "Primal Groudon & Primal Kyogre"> c: Primal Groudon & Primal Kyogre (Lords of Land & Water) </option>
+                            <option value = "Palkia & Dialga"> d: Palkia & Dialga (Lords of Space & Time) </option>
+                            <option value = "Zekrom & Reshiram"> e: Zekrom & Reshiram (Aspects of Yin and Yang) </option>
+                            <option value = "Xerneas & Yveltal"> f: Xerneas & Yveltal (Lords of Life and Death) </option>
+                            <option value = "Solgaleo & Lunala"> g: Solgaleo & Lunala (Lords of the Sun and Moon) </option>
+                            <option value = "Zacian and Zamazenta"> h: Zacian and Zamazenta </option>
+                            <option value = "Zygarde Complete"> i: Zygarde Complete (Lord of Balance) </option>
+                            <option value = "Ultra Necrozma"> j: Ultra Necrozma (Ultra Beast) </option>
+                            <option value = "Mega Rayquaza"> k: Mega Rayquaza (Lord of the Sky) </option>
+                            <option value = "Arceus"> l: Arceus (God of the Pokémon Universe) </option>
+                        </select>
+
+                    <label> *Rate Us </label>
+                    <select name = "Rate" id = "Rate" required>
+                            <option disabled selected value> -- rate our website from 1 to 5 -- </option>
+                            <option value = "Need lots of improvement"> 1: Extremely Disatisfied </option>
+                            <option value = "Need some improvement"> 2: Very Disatisfied </option>
+                            <option value = "Neutral"> 3: Neutral </option>
+                            <option value = "More than satisfied"> 4: Very Satisfied </option>
+                            <option value = "No improvement necessary"> 5: Extremely Satisfied </option>
+                    </select>
+
+                    <label for = "Improvement"> Please let us know what can be improved. </label>
+                    <textarea name = "Improvement" id = "Improvement" rows = "5" cols = "10"></textarea>
+
+                    <input type = "submit">
+                
+                </form>
+            </main>
+
+            <footer>
+                Copyright &copy; 2019 PokéMonsters<br>
+                Contact us at <a href = "mailto:ryan@thompson.com"> ryan@thompson.com </a>
+            </footer>
+        </div>
+    </body>
+</html>
